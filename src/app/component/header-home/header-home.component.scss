@@ -1,0 +1,55 @@
+.bg-header-home {
+    background-image: linear-gradient(to right, #000000a1, #000000a1), url("../../../assets/banner.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+}
+
+.text-banner-homePage {
+    color: #fff;
+}
+
+.text-banner-homePage button {
+    color: #fff;
+    background-color: darkorange;
+}
+
+.border-header-homePage {
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ffffff3d;
+}
+
+.nav-link-spaced {
+    margin-right: 30px;
+    color: #fff !important;
+}
+
+.cart-header {
+    position: relative;
+    font-size: 20px;
+}
+
+
+
+.bg-header-home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-homePage {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (max-width:786px) {
+    .text-banner-homePage :nth-child(3) {
+        color: #fff;
+        width: 100%;
+    }
+}
