@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <h1>Thêm Sản Phẩm</h1>
+    <div class="row">
+        <div class="form-all col-md-6">
+            <form (ngSubmit)="onHandleSubmit()">
+                <div>
+                    <label for="">Tên Sản Phẩm</label><br>
+                    <input type="text" [(ngModel)]="product.name" name="name">
+                </div>
+                <div>
+                    <label for="">Ảnh Sản Phẩm</label><br>
+                    <input type="text" [(ngModel)]="product.img" name="img">
+                </div>
+                <div>
+                    <label for="">Giá Sản Phẩm</label><br>
+                    <input type="number" [(ngModel)]="product.price" name="price">
+                </div>
+                <div>
+                    <label for="">Giá Sell Sản Phẩm</label><br>
+                    <input type="number" [(ngModel)]="product.priceOriginal" name="priceOriginal">
+                </div>
+                <button type="submit" class="btn btn-primary">Sửa sản phẩm</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img width="100%"
+                src="https://res.cloudinary.com/dwp7umncy/image/upload/v1680926202/ass_ts_nodejs/68747470733a2f2f616e616c7974696373696e6469616d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31322f646576656c6f7065722d6472696262626c652e676966_sjkka7.gif"
+                alt="">
+        </div>
+    </div>
+</div>

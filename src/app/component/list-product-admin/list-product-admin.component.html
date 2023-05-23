@@ -1,0 +1,41 @@
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Giảm Giá</th>
+            <th>Giá</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of sub,index as i">
+            <td>
+                <p>{{i +1}}</p>
+            </td>
+            <td>
+                <div class="d-flex align-items-center">
+                    <h6>{{product.name}}</h6>
+                </div>
+            </td>
+            <td>
+                <img width="100px" src="{{product.img}}" alt="">
+            </td>
+            <td>
+                <h6>{{product.priceOriginal}}</h6>
+            </td>
+            <td>
+                <p>{{product.price}} </p>
+            </td>
+            <td>
+                <a routerLink="/admin/put/{{product.id}}">Edit</a>
+                <button type="button" class="btn btn-link btn-sm btn-rounded" (click)="removeItem(product.id)">
+                    Xoá
+                </button>
+            </td>
+        </tr>
+
+
+    </tbody>
+</table>

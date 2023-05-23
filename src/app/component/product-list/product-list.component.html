@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="title">
+        <h1>FEATURED PRODUCT</h1>
+        <p>Hello ! This is a new product from shopNA</p>
+    </div>
+    <div class="container">
+        <div class="list-products">
+            <div class="all-product" *ngIf="sub && sub.length >0">
+                <div class=" item-products" *ngFor="let product of sub">
+                    <img src="{{product.img}}" alt="">
+                    <!-- <h6>{{product.img}}</h6> -->
+                    <h4 class="category-title">
+                        {{product.name}}
+                    </h4>
+                    <p class="price-products"><del>${{product.price}}</del>${{product.priceOriginal}}</p>
+                    <div class="show">
+                        <a routerLink="">Show</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

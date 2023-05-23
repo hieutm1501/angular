@@ -1,0 +1,148 @@
+.list-products {
+    margin-top: 100px;
+}
+
+.title h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 800;
+    font-family: Helvetica;
+    margin-top: 30px;
+}
+
+.title p {
+    text-align: center;
+    font-weight: 500;
+    color: #8f8f8f;
+}
+
+.item-products {
+    text-align: center;
+    transition: .2s linear;
+    border-radius: 10px;
+    background: #e4e1e163;
+}
+
+.item-products p {
+    color: #c02727;
+
+}
+
+.item-products .show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.item-products a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #17a2b8;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.item-products:hover {
+    box-shadow: 1px 0px 10px #4040403d;
+    transition: .1s linear;
+}
+
+.name-products {
+    color: #bf8a04;
+}
+
+
+.price-products {
+    color: #c02727;
+}
+
+.price-products del {
+    color: #8f8f8f;
+    padding-right: 6px;
+
+}
+
+
+@media (max-width: 576px) {
+    .all-product {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3px;
+    }
+
+    .item-products img {
+        width: 70%;
+    }
+
+    .item-products h4 {
+        font-size: 0.7rem;
+        height: 40px;
+    }
+
+    .item-products .show a {
+        width: 70%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+    }
+
+    .price-products {
+        color: #8f8f8f;
+        font-size: 0.5rem;
+    }
+
+}
+
+// ================ MIN 576px ==========//
+@media (min-width: 576px) {
+    .all-product {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3px;
+    }
+
+    .item-products img {
+        width: 80%;
+    }
+
+    .item-products h4 {
+        font-size: 1rem;
+        height: 50px;
+    }
+
+    .item-products .show a {
+        width: 70%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .all-product {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .item-products img {
+        width: 100%;
+    }
+
+    .item-products h4 {
+        font-size: 1.5rem;
+        height: 60px;
+    }
+
+    .item-products .show a {
+        width: 80%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 5px;
+    }
+}
