@@ -9,12 +9,13 @@ import { DashboarhHomeComponent } from './pages/admin/dashboarh-home/dashboarh-h
 import { DashboarhPostComponent } from './pages/admin/dashboarh-post/dashboarh-post.component';
 import { DashboarhPutComponent } from './pages/admin/dashboarh-put/dashboarh-put.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'page', component: BaseLayoutComponent, children: [
-      // { path: 'products', component: ProductComponent },
+      { path: 'products/:id', component: ProductDetailComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
     ]

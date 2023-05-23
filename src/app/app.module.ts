@@ -22,7 +22,9 @@ import { DashboarhPostComponent } from './pages/admin/dashboarh-post/dashboarh-p
 import { DashboarhPutComponent } from './pages/admin/dashboarh-put/dashboarh-put.component';
 import { ListProductAdminComponent } from './component/list-product-admin/list-product-admin.component';
 import { PostProductComponent } from './component/post-product/post-product.component';
-import { PutProductComponent } from './component/put-product/put-product.component'
+import { PutProductComponent } from './component/put-product/put-product.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { ListProductDetailComponent } from './component/list-product-detail/list-product-detail.component'
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { PutProductComponent } from './component/put-product/put-product.compone
     DashboarhPutComponent,
     ListProductAdminComponent,
     PostProductComponent,
-    PutProductComponent
+    PutProductComponent,
+    ProductDetailComponent,
+    ListProductDetailComponent
   ],
   imports: [
     BrowserModule,

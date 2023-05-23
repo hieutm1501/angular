@@ -12,9 +12,9 @@
                     <h4 class="category-title">
                         {{product.name}}
                     </h4>
-                    <p class="price-products"><del>${{product.price}}</del>${{product.priceOriginal}}</p>
+                    <p class="price-products"><del>₫{{product.price}}</del>₫{{product.priceOriginal}}</p>
                     <div class="show">
-                        <a routerLink="">Show</a>
+                        <a routerLink="/page/products/{{product.id}}">Show</a>
                     </div>
                 </div>
             </div>
