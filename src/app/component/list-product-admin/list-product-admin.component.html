@@ -29,9 +29,10 @@
                 <p>{{product.price}} </p>
             </td>
             <td>
-                <a routerLink="/admin/put/{{product.id}}">Edit</a>
-                <button type="button" class="btn btn-link btn-sm btn-rounded" (click)="removeItem(product.id)">
-                    Xoá
+                <a routerLink="/admin/put/{{product.id}}" class="btn-edit btn btn-success">Edit</a>
+                <button type="button" class="btn-delete btn btn btn-danger btn-sm btn-rounded"
+                    (click)="removeItem(product.id)">
+                    Delete
                 </button>
             </td>
         </tr>

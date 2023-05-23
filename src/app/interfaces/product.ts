@@ -12,5 +12,5 @@ export interface IProducts {
     img: string,
     name: string,
     price: number,
-    priceOriginal?: number,
+    priceOriginal: number,
 }
